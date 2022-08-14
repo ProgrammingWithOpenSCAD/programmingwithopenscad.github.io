@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <link rel="icon" href="/images/Cover_detail.png" type="image/icon type" />
+  <link rel="icon" href="images/cover.png" type="image/icon type" />
 
   <title>Programming with OpenSCAD - Visual Quick Reference</title>
 
@@ -15,34 +15,49 @@
 
 <body>
   <nav>
-     <div class="nav-wrapper navbar-expand-lg light-blue lighten-1">
-       <a href="https://programmingwithopenscad.github.io" class="brand-logo"> <img src="images/cover.png"  height="50px" class="d-inline-block align-top" alt=""></a>
-       <ul id="nav-mobile" class="right hide-on-med-and-down">
-         <li><a href="https://programmingwithopenscad.github.io/learning.html">
-           Companion Teaching Resources
-         </a> </li>
-         <li><a href="https://programmingwithopenscad.github.io/quick-reference.html">
-           Visual Quick Reference
-         </a></li>
-         <li><a href="https://github.com/ProgrammingWithOpenSCAD/CodeSolutions">
-           Code Solutions
-         </a></li>
-       </ul>
-     </div>
-   </nav>
+    <div class="nav-wrapper navbar-expand-lg light-blue lighten-1">
+      <a href="https://programmingwithopenscad.github.io" class="brand-logo"> <img src="images/cover.png" height="50px" class="d-inline-block align-top" alt=""></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class=" hide-on-med-and-down  right " id="nav-mobile">
+        <li><a href="https://programmingwithopenscad.github.io/learning.html">
+            Companion Teaching Resources
+          </a> </li>
+        <li><a href="https://programmingwithopenscad.github.io/quick-reference.html">
+            Visual Quick Reference
+          </a></li>
+        <li><a href="https://github.com/ProgrammingWithOpenSCAD/CodeSolutions">
+            Code Solutions
+          </a></li>
+      </ul>
+    </div>
+  </nav>
+  <ul class="sidenav light-blue lighten-1 right " id="mobile-demo">
+    <li><a href="https://programmingwithopenscad.github.io">
+        Programming with OpenSCAD
+      </a> </li>
+    <li><a href="https://programmingwithopenscad.github.io/learning.html">
+        Companion Teaching Resources
+      </a> </li>
+    <li><a href="https://programmingwithopenscad.github.io/quick-reference.html">
+        Visual Quick Reference
+      </a></li>
+    <li><a href="https://github.com/ProgrammingWithOpenSCAD/CodeSolutions">
+        Code Solutions
+      </a></li>
+  </ul>
+
   <div class="section no-pad-bot">
     <div class="container">
       <br />
       <br />
-      <div class="row center">
-        <img src="images/cover.png" height="150" />
-      </div>
+      <h3 class="header light"> Programming with OpenSCAD: Visual Quick Reference</h3>
+    </div>
       <div class="row">
         <div class="col s6">
-          <h5 class="header light">OpenSCAD Quick Reference: <a href="learning_resources/OpenSCAD-Quick-Reference-3D-Shapes.pdf">3D Shapes</a></h5>
+          <h5 class="header light"> <a href="learning_resources/OpenSCAD-Quick-Reference-3D-Shapes.pdf">3D Shapes</a></h5>
         </div>
         <div class="col s6">
-          <h5 class="header light">OpenSCAD Quick Reference: <a href="learning_resources/OpenSCAD-Quick-Reference-2D-Shapes.pdf">2D Shapes</a></h5>
+          <h5 class="header light"> <a href="learning_resources/OpenSCAD-Quick-Reference-2D-Shapes.pdf">2D Shapes</a></h5>
         </div>
       </div>
       <div class="row">
@@ -56,10 +71,10 @@
 
       <div class="row">
         <div class="col s6">
-          <h5 class="header light">OpenSCAD Quick Reference: <a href="learning_resources/OpenSCAD-Quick-Reference-Transforming-Shapes.pdf">Transforming Shapes</a></h5>
+          <h5 class="header light"> <a href="learning_resources/OpenSCAD-Quick-Reference-Transforming-Shapes.pdf">Transforming Shapes</a></h5>
         </div>
         <div class="col s6">
-          <h5 class="header light">OpenSCAD Quick Reference: <a href="learning_resources/OpenSCAD-Quick-Reference-Loops-and-Lists.pdf">Loops and Lists</a></h5>
+          <h5 class="header light"> <a href="learning_resources/OpenSCAD-Quick-Reference-Loops-and-Lists.pdf">Loops and Lists</a></h5>
         </div>
       </div>
       <div class="row">
@@ -73,7 +88,7 @@
 
       <div class="row">
         <div class="col s6">
-          <h5 class="header light">OpenSCAD Quick Reference: <a href="learning_resources/OpenSCAD-Quick-Reference-3D-Printing-Pipeline.pdf">3D Printing Pipeline</a></h5>
+          <h5 class="header light"> <a href="learning_resources/OpenSCAD-Quick-Reference-3D-Printing-Pipeline.pdf">3D Printing Pipeline</a></h5>
         </div>
       </div>
       <div class="row">
@@ -105,6 +120,15 @@
           </p>
         </div>
         <div class="col l3 s12">
+          <h5 class="amber-text">Programming with OpenSCAD</h5>
+          <ul>
+            <li>
+              <a class="white-text" href="https://programmingwithopenscad.github.io/learning.html">Companion Resources</a>
+            </li>
+            <li>
+              <a class="white-text" href="https://programmingwithopenscad.github.io/quick-reference.html">Visual Quick Refrence</a>
+            </li>
+          </ul>
           <h5 class="amber-text">OpenSCAD</h5>
           <ul>
             <li>
@@ -159,6 +183,18 @@
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function() {
+    $('.sidenav').sidenav();
+  });
+</script>
 </body>
 
 </html>
